@@ -1,24 +1,45 @@
 {
-  "name": "demoweek2",
-  "version": "0.0.0",
-  "private": true,
-  "scripts": {
-    "start": "node ./server.js"
-  },
-  "engines": {
-    "node": "^14.15.5",
-    "npm": "^7.0.0"
-  },
+  "name": "spandan_express_portfolio",
+  "version": "1.0.0",
+  "description": "website for COMP229",
+  "main": "app.js",
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.15.2",
+    "basic-auth": "^2.0.1",
+    "body-parser": "^1.18.3",
     "bootstrap": "^4.6.0",
-    "cookie-parser": "~1.4.4",
-    "debug": "~2.6.9",
-    "ejs": "~2.6.1",
-    "express": "~4.16.1",
-    "http-errors": "~1.6.3",
+    "bytes": "^3.0.0",
+    "content-disposition": "^0.5.2",
+    "cookie-parser": "^1.4.5",
+    "ejs": "^2.6.2",
+    "express": "^4.16.4",
+    "finalhandler": "^1.1.1",
+    "http-errors": "^1.6.3",
+    "iconv-lite": "^0.4.23",
     "jquery": "^3.5.1",
-    "morgan": "~1.9.1",
-    "popper.js": "^1.16.1"
-  }
+    "mime": "^1.4.1",
+    "morgan": "^1.9.1",
+    "on-headers": "^1.0.2",
+    "popper.js": "^1.16.1",
+    "qs": "^6.5.2",
+    "raw-body": "^2.3.3",
+    "send": "^0.16.2",
+    "serve-static": "^1.13.2",
+    "setprototypeof": "^1.1.0",
+    "statuses": "^1.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Th3M3sS1/Spandan_Express_Portfolio.git"
+  },
+  "author": "Spandan Patel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Th3M3sS1/Spandan_Express_Portfolio/issues"
+  },
+  "homepage": "https://github.com/Th3M3sS1/Spandan_Express_Portfolio#readme"
 }
