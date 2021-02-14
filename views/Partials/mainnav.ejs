@@ -1,56 +1,11 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="/"><b>Spandan Patel</b></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
-
-          <% if (title=='Home') {%>
-          <li class="nav-item active">
-            <% } else {%>
-          <li class="nav-item">
-            <% } %>
-            <a class="nav-link" aria-current="page" href="/">Home</a>
-          </li>
-
-
-          <% if (title=='Info') {%>
-            <li class="nav-item active">
-              <% } else {%>
-            <li class="nav-item">
-              <% } %>
-            <a class="nav-link" aria-current="page" href="/info">Info</a>
-          </li>
-
-
-          <% if (title=='Services') {%>
-            <li class="nav-item active">
-              <% } else {%>
-            <li class="nav-item">
-              <% } %>
-            <a class="nav-link" aria-current="page" href="/services">Service</a>
-          </li>
-
-
-          <% if (title=='About') {%>
-          <li class="nav-item active">
-            <% } else {%>
-              <li class="nav-item">
-            <% } %>
-            <a class="nav-link" aria-current="page" href="/about">About</a>
-          </li>
-
-
-          <% if (title=='Contact') {%>
-            <li class="nav-item active">
-              <% } else {%>
-                <li class="nav-item">
-              <% } %>
-            <a class="nav-link" aria-current="page" href="/contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+<div class="topnav" id="myTopnav">
+  <a type="brand-name" href="/">Spandan Patel</a>
+  <div class="topnav-flrght">
+  <a href="/">Home</a>
+  <a href="/info">About Me</a>
+  <a href="/projects">Projects</a>
+  <a href="/services">Services</a>
+  <a href="/contact">Contact Me</a>
+  </div>
+  </a>
+</div>

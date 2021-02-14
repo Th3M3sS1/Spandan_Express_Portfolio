@@ -1,19 +1,27 @@
+<!--HEADER SECTION-->
 <%- include Partials/header.ejs%>
 
 <!--MAIN NAVIGATION-->
-  <body>
+  
     <%- include Partials/mainnav.ejs%>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
 
-    <p class="text-center">Test Test Test</p> 
+<!--BODY SECTION-->
+    <div class="home-page-main">
+      <div class="home-page-text">
+        <h3 style="font-size: 55px; font-weight: bold;">Welcome to my Portfolio</h3>
+        <h1 style="font-size: 35px;font-weight: bold;">My name is Spandan Patel. I am a Student. I love Math and Programming.
+        </h1>
+        <br>
+          <h4 style="font-weight: bold;">"A good game gives us meaningful accomplishment -  clear achivement that we  don't necessairly get from real life."</h4>
+          <br>
+        <div class="info-link">          
+          <a href="/info">Learn More About Me</a>
+        </div>        
+      </div>
+    </div>
 
 <!--FOOTER SECTION-->
     <%- include Partials/footer.ejs%>
 
 <!--SCRIPT SECTION-->
-    <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="Scripts/app.js"></script>
-    <script src="/jquery/dist/jquery.min.js"></script>
-  </body>
-</html>
+  <%- include Partials/script.ejs%>
