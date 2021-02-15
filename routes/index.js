@@ -14,7 +14,7 @@ router.get('/', function(req, res, next) {
 });
 
 /*get service page*/
-/*didn't use "index" as first argument of render method, so don't have to create if else statement by cheking title name for showing contents in index.ejs*/
+/*didn't use "index" as "view" in render method, so don't have to create if else statement by cheking title name for showing contents in index.ejs*/
 router.get('/services', function(req, res, next) {
   res.render('services', { title: 'Services' });
 });
