@@ -12,6 +12,7 @@ let path = require('path');
 let cookieParser = require('cookie-parser');
 let logger = require('morgan');
 
+//creating variable to store routes
 let indexRouter = require('./routes/index');
 let usersRouter = require('./routes/users');
 
@@ -25,9 +26,12 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
+
+//let us help to use shorter path for contents and modules
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'node_modules')));
 
+//use "/" for variable "indexRouter" we created above to refer index.ejs file
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
