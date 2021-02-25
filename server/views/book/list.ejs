@@ -1,0 +1,56 @@
+<!-- File name: list.ejs
+Name: Spandan Patel
+Student Id: 301160189
+Date: 24/02/2021
+ExpressPortfolio - with DB
+Copyright © 2021 Centennial College. All rights reserved.-->
+
+<!--HEADER SECTION-->
+<%- include ../Partials/header.ejs%>
+
+<!--MAIN NAVIGATION-->
+  
+    <%- include ../Partials/mainnav.ejs%>
+
+<!--BODY SECTION-->
+    <div class="text-center">
+
+        <h3 style="margin-top: 10px;font-weight: bold;">Book List</h3>
+        
+        <br>
+        <table>
+            <tr>
+              <th>Name</th>
+              <th>Author</th>
+              <th>Published Year</th>
+              <th>Genre</th>
+              <th>Price</th>
+              <th>Edit Data</th>
+              <th>Delete Data</th>
+            </tr>
+
+            <% for(let count = 0; count < BookList.length; count++) { %>
+                <tr>
+                    <td><%= BookList[count].name %></td>
+                    <td><%= BookList[count].author %></td>
+                    <td><%= BookList[count].published_year %></td>
+                    <td><%= BookList[count].genre %></td>
+                    <td><%= BookList[count].price %></td>
+                    <td><div class="info-link-table-edit"><a href="/book-list/edit/<%= BookList[count]._id %>">Edit This Book</a></div></td>
+                    <td><div class="info-link-table-delete"><a href="/book-list/delete/<%= BookList[count]._id %>">Delete This Book</a></div></td>
+                </tr>
+            <% } %>
+          </table>
+
+          <br>
+
+          <div class="info-link-black">          
+            <a href="/book-list/add" role="button">Add Book</a>
+          </div>  
+    </div>
+
+<!--FOOTER SECTION-->
+    <%- include ../Partials/footer.ejs%>
+
+<!--SCRIPT SECTION-->
+  <%- include ../Partials/script.ejs%>

@@ -2,7 +2,7 @@
   "name": "spandan_express_portfolio",
   "version": "1.0.0",
   "description": "website for COMP229",
-  "main": "app.js",
+  "main": "server.js",
   "dependencies": {
     "basic-auth": "^2.0.1",
     "body-parser": "^1.18.3",
@@ -17,6 +17,9 @@
     "iconv-lite": "^0.4.23",
     "jquery": "^3.5.1",
     "mime": "^1.4.1",
+    "mongod": "^2.0.0",
+    "mongodb": "^3.6.4",
+    "mongoose": "^5.11.18",
     "morgan": "^1.9.1",
     "on-headers": "^1.0.2",
     "popper.js": "^1.16.1",
@@ -27,7 +30,6 @@
     "setprototypeof": "^1.1.0",
     "statuses": "^1.4.0"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
