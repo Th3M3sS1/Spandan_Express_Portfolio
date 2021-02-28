@@ -8,30 +8,22 @@ Copyright © 2021 Centennial College. All rights reserved.*/
 let express = require('express');
 let router = express.Router();
 
+let indexController = require('../controllers/index');
+
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Home' });
-});
+router.get('/', indexController.displayHomePage);
 
 /*get service page*/
 /*didn't use "index" as "view" in render method, so don't have to create if else statement by cheking title name for showing contents in index.ejs*/
-router.get('/services', function(req, res, next) {
-  res.render('services', { title: 'Services' });
-});
+router.get('/services', indexController.displayServicePage);
 
 /*get project page*/
-router.get('/projects', function(req, res, next) {
-  res.render('projects', { title: 'Projects' });
-});
+router.get('/projects', indexController.displayProjectPage);
 
 /*get contact page*/
-router.get('/contact', function(req, res, next) {
-  res.render('contact', { title: 'Contact' });
-});
+router.get('/contact', indexController.displayContactPage);
 
 /*get about page*/
-router.get('/info', function(req, res, next){
-  res.render('info', {title: 'Info'});
-});
+router.get('/info', indexController.displayInfoPage);
 
 module.exports = router;
