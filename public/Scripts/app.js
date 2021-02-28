@@ -18,7 +18,7 @@ Copyright © 2021 Centennial College. All rights reserved.*/
                 if(!confirm("Are you sure?"))
                 {
                     event.preventDefault();
-                    window.location.assign('/book-list');
+                    window.location.assign('/business-list');
                 }
             });
         }

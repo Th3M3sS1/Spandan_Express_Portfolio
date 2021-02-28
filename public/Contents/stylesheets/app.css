@@ -198,7 +198,7 @@ body {
 }
 
 /*form start*/
-input[type=text], select, textarea {
+input[type=text], input[type=tel] , select, textarea {
   width: 80%;
   padding: 12px;
   border: 1px solid #ccc;
