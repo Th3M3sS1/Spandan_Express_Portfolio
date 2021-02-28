@@ -9,5 +9,6 @@ Copyright © 2021 Centennial College. All rights reserved.*/
 module.exports =
 {
     //"URI": "mongodb://localhost/business_store"
-    "URI": "mongodb+srv://Spandan:qtmElMvBBlCrEdPY@mongodbserver.3o2g4.mongodb.net/business-list?retryWrites=true&w=majority"
+    "URI": "mongodb+srv://Spandan:qtmElMvBBlCrEdPY@mongodbserver.3o2g4.mongodb.net/business-list?retryWrites=true&w=majority",
+    "Secret": "SomeSecret"
 }
